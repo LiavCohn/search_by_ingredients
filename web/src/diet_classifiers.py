@@ -5,7 +5,7 @@ from typing import List
 from time import time
 import pandas as pd
 import re
-from consts import MEASUREMENT_WORDS, STOPWORDS,NON_VEGAN_INGREDIENTS
+from consts import MEASUREMENT_WORDS, STOPWORDS,NON_VEGAN_INGREDIENTS,VEGAN_EXCEPTIONS
 
 try:
     from sklearn.metrics import classification_report
@@ -32,15 +32,6 @@ def is_ingredient_keto(ingredient: str) -> bool:
 
 
 def is_ingredient_vegan(ingredient: str) -> bool:
-    # vegan ingredients that might be confused with non-vegan ones
-    VEGAN_EXCEPTIONS = {
-        'peanut butter', 'cocoa butter', 'eggless', 'butternut', 'butter beans',
-        'coconut milk', 'almond milk', 'soy milk', 'oat milk', 'rice milk',
-        'cashew milk', 'hemp milk', 'flax milk', 'pea milk',
-        'vegan butter', 'margarine', 'vegan cheese', 'nutritional yeast',
-        'vegan mayonnaise', 'vegan cream', 'vegan yogurt'
-    }
-
 
     norm_ing = normalize_ingredient(ingredient)
     

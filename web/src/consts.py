@@ -17,3 +17,12 @@ MEASUREMENT_WORDS = {
 STOPWORDS = {
     'a', 'an', 'of', 'and', 'or', 'with', 'the', 'to', 'in', 'for'
 }
+
+# vegan ingredients that might be confused with non-vegan ones
+VEGAN_EXCEPTIONS = {
+        'peanut butter', 'cocoa butter', 'eggless', 'butternut', 'butter beans',
+        'coconut milk', 'almond milk', 'soy milk', 'oat milk', 'rice milk',
+        'cashew milk', 'hemp milk', 'flax milk', 'pea milk',
+        'vegan butter', 'margarine', 'vegan cheese', 'nutritional yeast',
+        'vegan mayonnaise', 'vegan cream', 'vegan yogurt'
+    }
