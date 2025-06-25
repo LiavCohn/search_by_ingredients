@@ -6,6 +6,7 @@ from time import sleep
 import sys
 import logging
 import os
+from helpers import preprocess_df
 
 # Configure logging - keep it simple
 logging.basicConfig(
@@ -19,6 +20,8 @@ logging.getLogger('opensearch').setLevel(logging.ERROR)    # Only show errors
 logger = logging.getLogger(__name__)
 
 app = Flask(__name__)
+
+preprocess_df()
 
 
 def wait_for_opensearch(client, max_retries=30, retry_interval=2):

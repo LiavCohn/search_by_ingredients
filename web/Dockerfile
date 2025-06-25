@@ -17,7 +17,7 @@ RUN curl -L https://argmax.nyc3.digitaloceanspaces.com/recipes/allrecipes.parque
 # Copy requirements first to leverage Docker cache
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
-
+RUN python -m nltk.downloader punkt wordnet omw-1.4 stopwords punkt_tab
 
 # Expose the port the app runs on
 EXPOSE 8080
