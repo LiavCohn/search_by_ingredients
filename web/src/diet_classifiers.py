@@ -3,15 +3,10 @@
 # This code is provided for evaluation purposes only.
 # ==========================================================
 
-import json
-import sys
-from argparse import ArgumentParser
 from typing import List
-from time import time
-import pandas as pd
 import re
 from helpers import is_ingredient_keto as is_ingredient_keto_helper,normalize_ingredient_vegan
-from consts import MEASUREMENT_WORDS, STOPWORDS,NON_VEGAN_INGREDIENTS,VEGAN_EXCEPTIONS
+from consts import NON_VEGAN_INGREDIENTS,VEGAN_EXCEPTIONS
 
 try:
     from sklearn.metrics import classification_report
