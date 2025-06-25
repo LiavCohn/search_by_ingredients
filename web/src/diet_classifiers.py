@@ -1,3 +1,8 @@
+# ==========================================================
+# Author: Liav Cohn
+# This code is provided for evaluation purposes only.
+# ==========================================================
+
 import json
 import sys
 from argparse import ArgumentParser

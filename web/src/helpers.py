@@ -1,3 +1,8 @@
+# ==========================================================
+# Author: Liav Cohn
+# This code is provided for evaluation purposes only.
+# Do not use, copy, or distribute without explicit permission.
+# ==========================================================
 from functools import lru_cache
 import re
 import pandas as pd

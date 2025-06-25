@@ -1,4 +1,9 @@
+# ==========================================================
+# Author: Liav Cohn
+# ==========================================================
 # 🥑 Search By Ingredients Challenge
+
+
 ![Argmax](https://argmaxml.com/wp-content/uploads/2024/04/Argmax_logo_inline.svg)
 
 🗓 Submission Deadline: June 30th, 2025
